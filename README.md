@@ -9,13 +9,15 @@
 
 3. __Analysis__
 * Unsupervised hierarchical clustering analysis
-	An supervised hierarchical clustering analysis was used to investigate the effectiveness of feature genes in distinguishing recurrence and no-recurrence samples. Clustering was performed and the results were visualized by a heat map. 
+
+An supervised hierarchical clustering analysis was used to investigate the effectiveness of feature genes in distinguishing recurrence and no-recurrence samples. Clustering was performed and the results were visualized by a heat map. 
 
 ![img](imgs/heatmap.png)
 
 Figure 1.Heatmap to show similarity between samples. Higher similarity in dark orange and lower similarity in yellow
 
-* SVM construction and Validation analysis	
+* SVM construction and Validation analysis
+
 An SVM model was constructed using GSE17537. To confirm the validity of the model the GSE1736 dataset was downloaded and used as the validation set. The SVM model was built in the same manner as the Xu et al., paper. The SVM model we generated has an accurate of 82%. Based on the use case in trying to differentiate recurrence for colon cancer patients this may be a useful tool to use among others. This may be useful to classify colon cancer patients with different prognosis and some genes in the their signature may represent new therapeutic targets. The datasets, especially the one chose for the initial model build was somewhat poor from a data quality perspective. Specifically the phenotype data was split across two separate characteristic channels. This leads us to question the rigor with which the study was performed.
 
 **Results**: A total of 1207 genes were identified as DEGs between recurrence and no-recurrence samples. Using SVM analysis and five gene expression profile data confirmation, a 15-gene signature were identified as a predictor of recurrence risk and prognosis for colon cancer patients. 
